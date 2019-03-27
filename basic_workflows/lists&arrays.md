@@ -42,7 +42,7 @@ var sumMoney = function(data){
 }
 
 function canBuyMeal(data){
-    return 3500 < totalMoney(data);
+    return 3500 < sumMoney(data);
 }
 
 canBuyMeal(ppl);    // returns true
