@@ -44,14 +44,15 @@ result is 51
  ```
 ## Implicit chaining 
 ### The "unwrapping" of the single value is implied. (there is no need to call .value().)
-```var data = [1, 5, 10, 15, 5, 10, 1, 20];
+```
+var data = [1, 5, 10, 15, 5, 10, 1, 20];
 
 var unqSum = _(data)
     .uniq()
     .sum();  
     
     //result is 51
-    ```  
+```  
     
  
 
