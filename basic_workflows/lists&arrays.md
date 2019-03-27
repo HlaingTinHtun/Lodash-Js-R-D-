@@ -47,3 +47,46 @@ function canBuyMeal(data){
 
 canBuyMeal(ppl);    // returns true
 ```
+
+# Some
+
+- If there is at least one record in a collection that meets some criteria.
+
+```
+var ppl = [
+    {
+        'name': 'Keita',
+        'hasMoney': true
+    },
+    {
+        'name': 'Sato',
+        'hasMoney': false
+    },
+    {
+        'name': 'Ruma',
+        'hasProperty': true
+    },
+]
+
+function canLive(data){
+    return _.some(data, function(e){ return e.hasProperty; });
+}
+
+canGroupDrive(ppl);    // returns true
+```
+
+# Map
+
+- Useful for changing a list into a different list in a purely declarative way.
+- Can just specify how you want to manipulate an element of a list.
+- Make a new list transformed by providing a function
+
+```
+var res1 = _.range(5);       // [ 0, 1, 2, 3, 4]
+
+var res2 = _.map(a, function(e){ return e + e;} );
+
+result is [0, 2, 4, 6, 8]
+```
+
+
